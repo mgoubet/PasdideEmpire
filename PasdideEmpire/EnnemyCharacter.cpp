@@ -10,3 +10,7 @@ EnnemyCharacter::EnnemyCharacter()
 EnnemyCharacter::~EnnemyCharacter()
 {
 }
+
+void EnnemyCharacter::move()
+{
+}

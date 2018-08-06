@@ -1,8 +1,10 @@
 #pragma once
+#include "Character.h"
 class Projectile
 {
+private:
+	int m_scope;
 public:
-	Projectile();
-	~Projectile();
+	virtual void touchCharacter(Character* a_character) = 0;
 };
 

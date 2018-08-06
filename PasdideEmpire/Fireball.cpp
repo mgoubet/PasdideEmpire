@@ -10,3 +10,7 @@ Fireball::Fireball()
 Fireball::~Fireball()
 {
 }
+
+void Fireball::touchCharacter(Character* a_character)
+{
+}

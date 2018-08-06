@@ -10,3 +10,7 @@ Arrow::Arrow()
 Arrow::~Arrow()
 {
 }
+
+void Arrow::touchCharacter(Character* a_character)
+{
+}

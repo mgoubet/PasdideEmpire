@@ -10,3 +10,11 @@ WarriorJob::WarriorJob()
 WarriorJob::~WarriorJob()
 {
 }
+
+void WarriorJob::weakAttack()
+{
+}
+
+void WarriorJob::strongAttack()
+{
+}

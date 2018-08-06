@@ -10,3 +10,7 @@ Potion::Potion()
 Potion::~Potion()
 {
 }
+
+void Potion::use()
+{
+}

@@ -10,3 +10,11 @@ ArcherJob::ArcherJob()
 ArcherJob::~ArcherJob()
 {
 }
+
+void ArcherJob::weakAttack()
+{
+}
+
+void ArcherJob::strongAttack()
+{
+}

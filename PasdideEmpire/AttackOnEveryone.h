@@ -1,8 +1,9 @@
 #pragma once
 class AttackOnEveryone
 {
+private:
+	int m_scope;
 public:
-	AttackOnEveryone();
-	~AttackOnEveryone();
+	virtual void active() = 0;
 };
 

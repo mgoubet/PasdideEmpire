@@ -10,3 +10,7 @@ PlayerCharacter::PlayerCharacter()
 PlayerCharacter::~PlayerCharacter()
 {
 }
+
+void PlayerCharacter::changeJob()
+{
+}

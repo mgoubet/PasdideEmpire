@@ -10,3 +10,7 @@ NeutralCharacter::NeutralCharacter()
 NeutralCharacter::~NeutralCharacter()
 {
 }
+
+void NeutralCharacter::move()
+{
+}

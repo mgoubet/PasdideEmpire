@@ -10,3 +10,7 @@ Map::Map()
 Map::~Map()
 {
 }
+
+void Map::movePnj()
+{
+}
