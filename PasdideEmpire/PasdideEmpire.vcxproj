@@ -177,6 +177,7 @@
     <ClCompile Include="Arrow.cpp" />
     <ClCompile Include="Bomb.cpp" />
     <ClCompile Include="Case.cpp" />
+    <ClCompile Include="Character.cpp" />
     <ClCompile Include="EnnemyCharacter.cpp" />
     <ClCompile Include="FightingCharacter.cpp" />
     <ClCompile Include="Fireball.cpp" />
