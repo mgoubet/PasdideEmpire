@@ -34,3 +34,13 @@ TEST(TestPlayerCharacter, TestChangeJob) {
 	PlayerCharacter l_player(0, 0, std::string(), new WarriorJob(), 0, 0, 0, 0, 0, Inventory());
 	// TODO Test after doing job class
 }
+
+TEST(TestPlayerCharacter, TestWeakAttack) {
+	PlayerCharacter l_player(0, 0, std::string(), new WarriorJob(), 0, 0, 0, 0, 0, Inventory());
+	// TODO Test after doing job class
+}
+
+TEST(TestPlayerCharacter, TestStrongAttack) {
+	PlayerCharacter l_player(0, 0, std::string(), new WarriorJob(), 0, 0, 0, 0, 0, Inventory());
+	// TODO Test after doing job class
+}

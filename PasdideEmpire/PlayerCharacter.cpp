@@ -20,8 +20,14 @@ PlayerCharacter::~PlayerCharacter()
 {
 }
 
-void PlayerCharacter::attack()
+void PlayerCharacter::weakAttack()
 {
+	m_job->weakAttack();
+}
+
+void PlayerCharacter::strongAttack()
+{
+	m_job->strongAttack();
 }
 
 void PlayerCharacter::unlockJob(const std::string& a_jobName)

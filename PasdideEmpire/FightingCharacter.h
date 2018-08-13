@@ -14,7 +14,8 @@ public:
 	FightingCharacter();
 	FightingCharacter(int a_x, int a_y, std::string a_name, Job* a_job, int a_hpMax, int a_currentHp, int a_lvl);
 	~FightingCharacter();
-	virtual void attack() = 0;
+	virtual void weakAttack() = 0;
+	virtual void strongAttack() = 0;
 	virtual void takeDammage(int a_dammage);
 	virtual void heal(int a_heal);
 
