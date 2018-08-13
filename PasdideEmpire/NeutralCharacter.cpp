@@ -11,6 +11,8 @@ NeutralCharacter::~NeutralCharacter()
 {
 }
 
-void NeutralCharacter::move()
+void NeutralCharacter::move(int a_x, int a_y)
 {
+	// TODO
+	// Algo mvt neutral
 }

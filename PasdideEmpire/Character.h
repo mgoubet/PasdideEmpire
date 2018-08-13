@@ -7,6 +7,6 @@ private:
 	std::vector<int> m_coordinate;
 	std::string m_name;
 public:
-	virtual void move() = 0;
+	virtual void move(int a_x, int a_y) = 0;
 };
 

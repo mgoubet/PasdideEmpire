@@ -6,6 +6,6 @@ class EnnemyCharacter
 public:
 	EnnemyCharacter();
 	~EnnemyCharacter();
-	virtual void move();
+	virtual void move(int a_x, int a_y);
 };
 

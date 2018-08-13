@@ -11,6 +11,8 @@ EnnemyCharacter::~EnnemyCharacter()
 {
 }
 
-void EnnemyCharacter::move()
+void EnnemyCharacter::move(int a_x, int a_y)
 {
+	// TODO 
+	// Algo mvt ennemi
 }
