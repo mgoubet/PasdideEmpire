@@ -3,10 +3,9 @@
 #include <string>
 class Character
 {
-private:
+protected:
 	std::vector<int> m_coordinate;
 	std::string m_name;
 public:
 	virtual void move(int a_x, int a_y) = 0;
 };
-

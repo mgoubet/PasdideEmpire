@@ -1,7 +1,7 @@
 #pragma once
 class AttackOnEveryone
 {
-private:
+protected:
 	int m_scope;
 public:
 	virtual void active() = 0;

@@ -4,12 +4,12 @@
 
 class FightingCharacter : public Character
 {
-private:
+protected:
 	Job* m_job;
 	int m_hpMax;
 	int m_currentHp;
 	int m_level;
-
+	
 public:
 	FightingCharacter();
 	~FightingCharacter();

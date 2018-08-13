@@ -2,7 +2,7 @@
 #include <string>
 class Job
 {
-private:
+protected:
 	std::string m_name;
 public:
 	virtual void weakAttack() = 0;
