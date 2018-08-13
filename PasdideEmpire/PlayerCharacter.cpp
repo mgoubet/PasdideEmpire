@@ -20,6 +20,10 @@ PlayerCharacter::~PlayerCharacter()
 {
 }
 
+void PlayerCharacter::attack()
+{
+}
+
 void PlayerCharacter::unlockJob(const std::string& a_jobName)
 {
 	if (std::find(m_jobAvailable.begin(), m_jobAvailable.end(), a_jobName) == m_jobAvailable.end()) {

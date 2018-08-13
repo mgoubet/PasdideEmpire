@@ -13,6 +13,7 @@ public:
 	PlayerCharacter();
 	PlayerCharacter(int a_x, int a_y, std::string a_name, Job* a_currentJob, int a_hpMax, int a_currentHp, int a_lvl, int a_expMax, int a_currentExp, Inventory a_inv);
 	~PlayerCharacter();
+	virtual void attack();
 	void unlockJob(const std::string& a_jobName);
 	void changeJob(Job* a_job);
 	virtual void move(int a_x, int a_y);

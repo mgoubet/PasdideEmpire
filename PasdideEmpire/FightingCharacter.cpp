@@ -21,15 +21,15 @@ FightingCharacter::~FightingCharacter()
 {
 }
 
-int FightingCharacter::attack()
-{
-	return 0;
-}
-
 void FightingCharacter::takeDammage(int a_dammage)
 {
+	m_currentHp -= a_dammage;
 }
 
 void FightingCharacter::heal(int a_heal)
 {
+	m_currentHp += a_heal;
+	if (m_currentHp > m_hpMax) {
+		m_currentHp = m_hpMax;
+	}
 }
