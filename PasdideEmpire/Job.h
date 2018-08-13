@@ -7,5 +7,6 @@ protected:
 public:
 	virtual void weakAttack() = 0;
 	virtual void strongAttack() = 0;
+	inline std::string getName() { return m_name; }
 };
 
