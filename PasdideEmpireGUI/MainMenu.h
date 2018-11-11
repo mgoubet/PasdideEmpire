@@ -10,16 +10,16 @@ public:
 	enum MenuResult { Nothing, Exit, Play };
 
 	struct MenuItem
-	{
+	{ 
 		public:
 			sf::Rect<int> rect;
 			MenuResult action;
 	};
 
-	MenuResult Show(sf::RenderWindow& window);
+	MenuResult Show(sf::RenderWindow& a_window);
 
 private:
-	MenuResult GetMenuResponse(sf::RenderWindow& window);
-	MenuResult HandleClick(int x, int y);
+	MenuResult GetMenuResponse(sf::RenderWindow& a_window);
+	MenuResult HandleClick(int a_x, int a_y);
 	std::list<MenuItem> m_menuItems;
 };
