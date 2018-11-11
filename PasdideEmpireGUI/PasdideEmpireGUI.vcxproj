@@ -123,12 +123,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameGUI.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="VisibleGameObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PasdideEmpire\PasdideEmpire.vcxproj">
       <Project>{925a15ce-e466-498d-9e47-38b6798d1add}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameGUI.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="VisibleGameObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
