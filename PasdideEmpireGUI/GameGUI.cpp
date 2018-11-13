@@ -1,6 +1,6 @@
 #include "GameGUI.h"
 #include "MainMenu.h"
-
+#include "PlayingScreen.h"
 void GameGUI::start(void)
 {
 	if (m_gameState != Uninitialized)
@@ -42,11 +42,6 @@ const sf::Event& GameGUI::getInput()
 	return l_currentEvent;
 }
 
-const GameObjectManager& GameGUI::getGameObjectManager()
-{
-	return GameGUI::m_gameObjectManager;
-}
-
 void GameGUI::gameLoop()
 {
 	sf::Event l_currentEvent;
@@ -62,24 +57,7 @@ void GameGUI::gameLoop()
 		}
 		case GameGUI::Playing:
 		{
-			m_mainWindow.clear(sf::Color(0, 0, 0));
-
-			m_gameObjectManager.updateAll();
-			m_gameObjectManager.drawAll(m_mainWindow);
-		
-			m_mainWindow.display();
-
-			if (l_currentEvent.type == sf::Event::Closed) {
-				m_gameState = GameGUI::Exiting;
-			}
-
-			if (l_currentEvent.type == sf::Event::KeyPressed)
-			{
-				if (l_currentEvent.key.code == sf::Keyboard::Escape) {
-					showMenu();
-				}
-			}
-
+			showPlayingScreen();
 			break;
 		}
 	}
@@ -89,7 +67,7 @@ void GameGUI::gameLoop()
 void GameGUI::showMenu()
 {
 	MainMenu l_mainMenu;
-	MainMenu::MenuResult l_result = l_mainMenu.Show(m_mainWindow);
+	MainMenu::MenuResult l_result = l_mainMenu.show(m_mainWindow);
 	switch (l_result)
 	{
 		case MainMenu::Exit:
@@ -101,6 +79,20 @@ void GameGUI::showMenu()
 	}
 }
 
+void GameGUI::showPlayingScreen()
+{
+	PlayingScreen l_playingScreen;
+	PlayingScreen::PlayingResult l_result = l_playingScreen.show(m_mainWindow);
+	switch (l_result)
+	{
+		case PlayingScreen::Exit:
+			m_gameState = Exiting;
+			break;
+		case PlayingScreen::ReturnMenu:
+			m_gameState = ShowingMenu;
+			break;
+	}
+}
+
 GameGUI::GameState GameGUI::m_gameState = Uninitialized;
 sf::RenderWindow GameGUI::m_mainWindow;
-GameObjectManager GameGUI::m_gameObjectManager;

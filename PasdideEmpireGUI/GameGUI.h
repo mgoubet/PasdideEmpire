@@ -9,6 +9,7 @@ private:
 	static void gameLoop();
 
 	static void showMenu();
+	static void showPlayingScreen();
 
 	enum GameState {
 		Uninitialized, Paused,
@@ -17,14 +18,11 @@ private:
 
 	static GameState m_gameState;
 	static sf::RenderWindow m_mainWindow;
-
-	static GameObjectManager m_gameObjectManager;
-
+	
 public:
 	static void start();
 	static sf::RenderWindow& getWindow();
 	const static sf::Event& getInput();
-	const static GameObjectManager& getGameObjectManager();
 
 	const static int SCREEN_WIDTH = 1024;
 	const static int SCREEN_HEIGHT = 768;

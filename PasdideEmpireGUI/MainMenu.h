@@ -16,7 +16,7 @@ public:
 			MenuResult action;
 	};
 
-	MenuResult Show(sf::RenderWindow& a_window);
+	MenuResult show(sf::RenderWindow& a_window);
 
 private:
 	MenuResult GetMenuResponse(sf::RenderWindow& a_window);

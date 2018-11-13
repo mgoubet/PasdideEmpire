@@ -1,7 +1,7 @@
 #include "MainMenu.h"
 
 
-MainMenu::MenuResult MainMenu::Show(sf::RenderWindow& a_window)
+MainMenu::MenuResult MainMenu::show(sf::RenderWindow& a_window)
 {
 
 	//Load menu image from file

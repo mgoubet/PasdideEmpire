@@ -1,5 +1,6 @@
 #pragma once
 #include "VisibleGameObject.h"
+#include "AnimatedVisibleGameObject.h"
 #include <string>
 class GameObjectManager
 {

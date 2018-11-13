@@ -10,7 +10,7 @@ public:
 
 	virtual void load(std::string filename);
 	virtual void draw(sf::RenderWindow & window);
-	virtual void update(float elapsedTime);
+	virtual void update(sf::Time a_time) = 0;
 
 	virtual void setPosition(float x, float y);
 	virtual sf::Vector2f getPosition() const;
@@ -22,11 +22,9 @@ public:
 
 protected:
 	sf::Sprite& getSprite();
-
-private:
+	bool m_isLoaded;
 	sf::Sprite  m_sprite;
 	sf::Texture m_image;
 	std::string m_filename;
-	bool m_isLoaded;
 
 };

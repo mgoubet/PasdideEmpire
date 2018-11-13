@@ -34,10 +34,6 @@ void VisibleGameObject::draw(sf::RenderWindow & a_renderWindow)
 	}
 }
 
-void VisibleGameObject::update(float a_elapsedTime)
-{
-}
-
 void VisibleGameObject::setPosition(float a_x, float a_y)
 {
 	if (m_isLoaded)
