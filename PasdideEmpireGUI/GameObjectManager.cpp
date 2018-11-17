@@ -25,6 +25,11 @@ void GameObjectManager::remove(std::string a_name)
 	}
 }
 
+sf::Time GameObjectManager::restartClock()
+{
+	return m_clock.restart();
+}
+
 VisibleGameObject* GameObjectManager::get(std::string a_name) const
 {
 	std::map<std::string, VisibleGameObject*>::const_iterator l_results = m_gameObjects.find(a_name);
@@ -51,13 +56,13 @@ void GameObjectManager::drawAll(sf::RenderWindow& renderWindow)
 	}
 }
 
-void GameObjectManager::updateAll()
+void GameObjectManager::updateAll(sf::Time a_time)
 {
 	std::map<std::string, VisibleGameObject*>::const_iterator l_itr = m_gameObjects.begin();
-	sf::Time l_timeDelta = m_clock.restart();
+	//sf::Time l_timeDelta = m_clock.restart();
 	while (l_itr != m_gameObjects.end())
 	{
-		l_itr->second->update(l_timeDelta);
+		l_itr->second->update(a_time);
 		l_itr++;
 	}
 

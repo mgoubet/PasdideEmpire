@@ -10,11 +10,12 @@ public:
 
 	void add(std::string a_name, VisibleGameObject* a_gameObject);
 	void remove(std::string a_name);
+	sf::Time restartClock();
 	int getObjectCount() const;
 	VisibleGameObject* get(std::string a_name) const;
 
 	void drawAll(sf::RenderWindow& a_renderWindow);
-	void updateAll();
+	void updateAll(sf::Time a_time);
 
 private:
 	std::map<std::string, VisibleGameObject*> m_gameObjects;
